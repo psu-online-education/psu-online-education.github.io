@@ -3,9 +3,13 @@
   "description": "A Pattern Lab binding to the Penn State Online Education design system",
   "version": "1.0.0",
   "devDependencies": {
-    "@psu-online-education/patternlab": "^2.0.0"
+    "@psu-online-education/patternlab": "^2.0.0",
+    "patch-package": "^8.0.0"
   },
   "scripts": {
     "build": "patternlab build"
+  },
+  "default": {
+    "postinstall": "patch-package"
   }
 }
